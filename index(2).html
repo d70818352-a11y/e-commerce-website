@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopNest – Modern Online Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style(1).css">
+</head>
+<body>
+<div id="loader"><div class="spin"></div></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="navbar"><div class="wrap nav-in">
+  <a class="logo" href="#home">🛍️ Shop<span>Nest</span></a>
+  <nav id="menu"><a href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <div class="search"><input id="navSearch" type="search" placeholder="Search products..." aria-label="Search"></div>
+  <div class="icons">
+    <button class="ib" id="wishBtn" aria-label="Wishlist">♡<b id="wishCount">0</b></button>
+    <button class="ib" id="cartBtn" aria-label="Cart">🛒<b id="cartCount">0</b></button>
+    <button class="btn sm" id="loginBtn">Login</button>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</div></header>
+
+<!-- HERO -->
+<section class="hero" id="home"><div class="wrap hero-in">
+  <div class="hero-t">
+    <span class="tag">🔥 New Season Sale</span>
+    <h1>Everything you love,<br>delivered to your <em>nest.</em></h1>
+    <p>Discover premium electronics, fashion, shoes, beauty and more from top brands — with unbeatable prices and fast delivery.</p>
+    <a href="#products" class="btn lg gold">Shop Now →</a>
+    <div class="stats"><div><b>50K+</b>Customers</div><div><b>500+</b>Brands</div><div><b>4.8★</b>Rating</div></div>
+  </div>
+  <div class="hero-i"><div class="disc">UP TO<b>40%</b>OFF</div><div class="blob"></div><span class="fl f1">🎧</span><span class="fl f2">👟</span><span class="fl f3">⌚</span><span class="fl f4">🎁</span></div>
+</div></section>
+
+<!-- CATEGORIES -->
+<section class="sec" id="categories"><div class="wrap">
+  <h2 class="st">Shop by Category</h2><p class="ss">Find exactly what you need</p>
+  <div class="cats">
+    <button class="cat" data-cat="Electronics"><i>🎧</i>Electronics</button><button class="cat" data-cat="Fashion"><i>👕</i>Fashion</button>
+    <button class="cat" data-cat="Shoes"><i>👟</i>Shoes</button><button class="cat" data-cat="Watches"><i>⌚</i>Watches</button>
+    <button class="cat" data-cat="Beauty"><i>💄</i>Beauty</button><button class="cat" data-cat="Home & Kitchen"><i>🍳</i>Home &amp; Kitchen</button>
+    <button class="cat" data-cat="Sports"><i>🏋️</i>Sports</button><button class="cat" data-cat="Accessories"><i>👜</i>Accessories</button>
+  </div>
+</div></section>
+
+<!-- PRODUCTS -->
+<section class="sec alt" id="products"><div class="wrap">
+  <h2 class="st">Our Products</h2><p class="ss">Handpicked deals just for you</p>
+  <div class="filters">
+    <input id="search" type="search" placeholder="🔍 Search products...">
+    <select id="fCat"><option value="">All Categories</option></select>
+    <select id="fPrice"><option value="">Any Price</option><option value="0-50">Under $50</option><option value="50-100">$50 – $100</option><option value="100-250">$100 – $250</option><option value="250-9999">$250+</option></select>
+    <select id="fRating"><option value="0">Any Rating</option><option value="4">4★ &amp; up</option><option value="4.5">4.5★ &amp; up</option></select>
+    <select id="fSort"><option value="new">Sort: Newest</option><option value="pl">Price: Low to High</option><option value="ph">Price: High to Low</option><option value="rt">Rating: Highest</option></select>
+    <button class="btn ghost" id="fReset">Reset</button>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<!-- ABOUT -->
+<section class="sec" id="about"><div class="wrap about">
+  <div class="about-i"><span>🛍️</span></div>
+  <div>
+    <h2 class="st left">About ShopNest</h2>
+    <p>Founded in 2020, ShopNest is a modern online marketplace bringing quality products from trusted brands straight to your door. We believe shopping should be simple, secure and enjoyable.</p>
+    <p>From the latest electronics to everyday essentials, every product is curated for quality and value — backed by easy 30-day returns and friendly 24/7 support.</p>
+    <ul class="feat"><li>🚚 Free shipping over $150</li><li>🔒 Secure checkout</li><li>↩️ 30-day returns</li><li>💬 24/7 support</li></ul>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section class="sec alt" id="contact"><div class="wrap">
+  <h2 class="st">Contact Us</h2><p class="ss">We'd love to hear from you</p>
+  <div class="contact">
+    <div class="cinfo"><p>📍 45 Commerce Avenue, New York</p><p>📞 +1 555 010 2030</p><p>✉️ support@shopnest.com</p><p>🕘 Mon–Sat, 9am – 6pm</p></div>
+    <form id="contactForm" novalidate>
+      <label>Name<input id="cName" placeholder="Your name"><small class="er"></small></label>
+      <label>Email<input id="cEmail" type="email" placeholder="you@example.com"><small class="er"></small></label>
+      <label>Message<textarea id="cMsg" rows="5" placeholder="How can we help?"></textarea><small class="er"></small></label>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="foot"><div class="wrap fgrid">
+  <div><h4 class="logo">🛍️ Shop<span>Nest</span></h4><p>Your one-stop shop for quality products at unbeatable prices.</p><div class="soc"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="YouTube">▶</a></div></div>
+  <div><h5>Quick Links</h5><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <div><h5>Categories</h5><a href="#products" data-cat="Electronics">Electronics</a><a href="#products" data-cat="Fashion">Fashion</a><a href="#products" data-cat="Shoes">Shoes</a><a href="#products" data-cat="Beauty">Beauty</a></div>
+  <div><h5>Contact</h5><p>45 Commerce Ave, New York</p><p>+1 555 010 2030</p><p>support@shopnest.com</p></div>
+</div><p class="copy">© 2026 ShopNest. All rights reserved. Demo store — frontend only.</p></footer>
+
+<div id="overlay"></div>
+
+<!-- CART PANEL -->
+<aside class="panel" id="cartPanel"><div class="ph-h"><h3>🛒 Your Cart</h3><button class="x close">✕</button></div>
+  <div class="ph-b" id="cartItems"></div>
+  <div class="ph-f"><div class="row"><span>Subtotal</span><b id="cSub">$0.00</b></div><div class="row"><span>Shipping</span><b id="cShip">$0.00</b></div><div class="row tot"><span>Grand Total</span><b id="cTot">$0.00</b></div><button class="btn full" data-a="checkout">Checkout</button></div>
+</aside>
+
+<!-- WISHLIST PANEL -->
+<aside class="panel" id="wishPanel"><div class="ph-h"><h3>♥ Wishlist</h3><button class="x close">✕</button></div>
+  <div class="ph-b" id="wishItems"></div>
+</aside>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="productModal"><div class="box wide"><button class="x close abs">✕</button><div id="pmBody"></div></div></div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal"><div class="box wide"><button class="x close abs">✕</button>
+  <div id="coView"><h3>Checkout</h3><div class="co">
+    <form id="coForm" novalidate>
+      <label>Full Name<input id="coName"><small class="er"></small></label>
+      <label>Email<input id="coEmail" type="email"><small class="er"></small></label>
+      <label>Phone<input id="coPhone"><small class="er"></small></label>
+      <label>Address<input id="coAddr"><small class="er"></small></label>
+      <div class="two"><label>City<input id="coCity"><small class="er"></small></label><label>Postal Code<input id="coZip"><small class="er"></small></label></div>
+      <div class="pay"><b>Payment Method (demo)</b>
+        <label class="rad"><input type="radio" name="pay" value="Cash on Delivery" checked> Cash on Delivery</label>
+        <label class="rad"><input type="radio" name="pay" value="Credit/Debit Card"> Credit/Debit Card</label>
+        <label class="rad"><input type="radio" name="pay" value="PayPal"> PayPal</label>
+      </div>
+      <button class="btn full" type="submit">Place Order</button>
+    </form>
+    <div class="sum"><h4>Order Summary</h4><div id="coItems"></div><div class="row"><span>Subtotal</span><b id="coSub"></b></div><div class="row"><span>Shipping</span><b id="coShip"></b></div><div class="row tot"><span>Total</span><b id="coTot"></b></div></div>
+  </div></div>
+  <div id="coDone" class="done hide"><div class="ok">✓</div><h3>Order Confirmed!</h3><p>Thank you! Your order <b id="orderId"></b> has been placed.</p><p class="muted" id="orderInfo"></p><button class="btn close">Continue Shopping</button></div>
+</div></div>
+
+<!-- AUTH MODAL -->
+<div class="modal" id="authModal"><div class="box"><button class="x close abs">✕</button>
+  <div class="tabs"><button class="tab on" data-tab="login">Login</button><button class="tab" data-tab="register">Register</button></div>
+  <form id="loginForm" novalidate>
+    <label>Email<input id="lEmail" type="email" placeholder="you@example.com"><small class="er"></small></label>
+    <label>Password<input id="lPass" type="password" placeholder="Min 6 characters"><small class="er"></small></label>
+    <button class="btn full" type="submit">Login</button>
+  </form>
+  <form id="regForm" class="hide" novalidate>
+    <label>Name<input id="rName"><small class="er"></small></label>
+    <label>Email<input id="rEmail" type="email"><small class="er"></small></label>
+    <label>Password<input id="rPass" type="password"><small class="er"></small></label>
+    <label>Confirm Password<input id="rConf" type="password"><small class="er"></small></label>
+    <button class="btn full" type="submit">Create Account</button>
+  </form>
+</div></div>
+
+<div id="toasts"></div>
+<script src="script.js"></script>
+</body>
+</html>
